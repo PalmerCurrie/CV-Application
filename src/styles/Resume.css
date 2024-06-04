@@ -1,0 +1,37 @@
+/* Resume.css */
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Light grey background for contrast */
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 794px; /* A4 paper width in pixels (8.27 inches) at 96 DPI */
+    aspect-ratio: 8.27 / 11.69; /* A4 aspect ratio */
+    background-color: #fff; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to mimic paper */
+    border-radius: 4px; /* Optional: Slightly rounded corners */
+    padding: 20px;
+    overflow: auto; /* Ensure content within the paper can scroll if necessary */
+}
+
+/* Optional: Add some padding and basic styles for the content inside the paper */
+.container * {
+    margin-bottom: 16px;
+}
