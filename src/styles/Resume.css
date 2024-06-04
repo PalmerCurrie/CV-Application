@@ -35,3 +35,33 @@ body {
 .container * {
     margin-bottom: 16px;
 }
+
+
+.personal-details-container {
+    text-align: center; 
+}
+
+.full-name {
+    font-size: 24px; 
+    color: #000; 
+    margin-bottom: 10px; 
+}
+
+#personal-details {
+    display: flex; 
+    flex-wrap: wrap; 
+    margin: 10px;
+
+}
+
+#personal-details p {
+    width: 100%; /* Each detail takes up full width */
+    margin: 0;
+    color: #000; /* Black color for the text */
+}
+
+@media (min-width: 768px) {
+    #personal-details p {
+        width: 33.33%; /* Each detail takes up one-third of the width on larger screens */
+    }
+}   
