@@ -1,0 +1,53 @@
+/* Basic reset for consistent styling across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for the form */
+.personal-details-input-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Form styling */
+.personal-details-input-form form {
+    background: #fff; /* White background for the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Label styling */
+.label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333; /* Dark grey text */
+}
+
+/* Input field styling */
+.input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; /* Space between inputs */
+    border: 1px solid #ced4da; /* Light grey border */
+    border-radius: 4px;
+    font-size: 16px;
+    color: #495057; /* Dark grey text */
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+/* Input field focus styling */
+.input:focus {
+    border-color: #80bdff; /* Blue border on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25); /* Subtle blue shadow on focus */
+}
