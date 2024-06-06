@@ -18,6 +18,7 @@ body {
     align-items: center;
     background-color: #f0f0f0; /* Light grey background for contrast */
     padding: 20px;
+    font-family: 'Times New Roman', serif;
 }
 
 .container {
@@ -44,6 +45,7 @@ body {
 }
 
 .full-name {
+    margin-top: 20px;
     font-size: 24px; 
     color: #000; 
     margin-bottom: 10px; 
@@ -51,19 +53,17 @@ body {
 
 #personal-details {
     display: flex; 
-    flex-wrap: wrap; 
-    margin: 10px;
-
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: nowrap; 
+    gap: 15px;
+    margin: 0 auto; 
 }
 
 #personal-details p {
-    width: 100%; /* Each detail takes up full width */
-    margin: 0;
-    color: #000; /* Black color for the text */
+    width: auto; 
+    font-size: 14px;
+    margin: 0 2px; 
+    color: #000; 
+    white-space: nowrap; 
 }
-
-@media (min-width: 768px) {
-    #personal-details p {
-        width: 33.33%; /* Each detail takes up one-third of the width on larger screens */
-    }
-}   
