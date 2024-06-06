@@ -22,8 +22,10 @@ body {
 
 .container {
     width: 100%;
-    max-width: 794px; /* A4 paper width in pixels (8.27 inches) at 96 DPI */
-    aspect-ratio: 8.27 / 11.69; /* A4 aspect ratio */
+    width: 595px;
+    height: 842px;
+    /* max-width: 794px; A4 paper width in pixels (8.27 inches) at 96 DPI */
+    /* aspect-ratio: 8.27 / 11.69; A4 aspect ratio */
     background-color: #fff; /* White background */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to mimic paper */
     border-radius: 4px; /* Optional: Slightly rounded corners */

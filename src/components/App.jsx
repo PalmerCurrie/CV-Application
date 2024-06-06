@@ -1,33 +1,33 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Resume from './Resume';
+import PersonalDetailsInputForm from "./PersonalDetailsInputForm"
 import '../styles/App.css'
+import '../styles/PersonalDetailsInputForm.css'
+import '../styles/Resume.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    phonenumber: "",
+    address: ""
+  })
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+        ...prevData,
+        [name]: value
+    }));
+};
+
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="body">
+        <PersonalDetailsInputForm formData={formData} handleChange={handleChange} />
+        <Resume formData={formData} />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
