@@ -14,7 +14,7 @@ body {
     display: grid;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0; 
+    background-color: #f0f0f0;
     padding: 20px;
     font-family: 'Times New Roman', serif;
 }
@@ -23,11 +23,11 @@ body {
     width: 100%;
     max-width: 595px;
     height: 842px;
-    background-color: #fff; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    border-radius: 4px; 
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
     padding: 20px;
-    overflow: auto; 
+    overflow: auto;
 }
 
 .container * {
@@ -36,11 +36,20 @@ body {
 
 .personal-details-container {
     text-align: center;
-    background-color: #2a3d55; 
-    color: white; 
+    background-color: #2a3d55;
+    color: white;
     padding: 20px;
-    border-radius: 4px; 
-    margin-bottom: 20px; 
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.personal-details-subsection {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .personal-details-container h1 {
@@ -54,37 +63,39 @@ body {
 
 .section-header {
     font-size: 22px;
-    background-color: #f0f0f0; 
+    background-color: #f0f0f0;
     padding: 10px;
-    border-radius: 4px; 
-    margin-bottom: 20px; 
-    color: #2a3d55; 
+    border-radius: 4px;
+    margin-bottom: 20px;
+    color: #2a3d55;
+    text-align: left;
 }
 
-.education-container, .experience-container {
+.education-container {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 4px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
-.education-container p, .experience-container p {
+.education-container p {
     margin: 5px 0;
     font-size: 14px;
-    color: #333; /* text color */
+    color: #333;
 }
 
-#education-details, #experience-details {
+#education-details {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 10px;  
 }
 
-#education-details p, #experience-details p {
+#education-details p {
     margin: 2px 0;
 }
 
-.school, .company {
+.school {
     font-weight: bold;
     margin-bottom: 5px;
-    color: #2a3d55; /* text color */
+    color: #2a3d55;
 }

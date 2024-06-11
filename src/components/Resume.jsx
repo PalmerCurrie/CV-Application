@@ -6,7 +6,7 @@ export default function Resume({personalDetails, educationDetials}) {
         <div className="container">
            <div className="personal-details-container">
                 <h1 id='user-full-name' className='full-name'>{personalDetails.fullName}</h1>
-                <div id='personal-details'>
+                <div id='personal-details' className='personal-details-subsection'>
                     <p id='user-email'>{personalDetails.email}</p>
                     <p id='user-phonenumber'>{personalDetails.phonenumber}</p>
                     <p id='user-address'>{personalDetails.address}</p> 
@@ -16,7 +16,7 @@ export default function Resume({personalDetails, educationDetials}) {
             <div className="education-container">
                 <div className="section-header"> Education </div>
                     <h1 id='user-school' className='school'>{educationDetials.school}</h1>
-                    <div id='education-details'>
+                    <div id='education-details' className="experience-container">
                     <p id='user-city'>{educationDetials.degree}</p>
                         <p id='user-city'>{educationDetials.city}</p>
                         <p id='user-country'>{educationDetials.country}</p>
