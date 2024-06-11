@@ -7,13 +7,33 @@
   html, body {
     height: 100%;
     overflow-x: hidden;
-    font-family: 'Times New Roman', serif;
+    --fa-style-family-brands: "Font Awesome 6 Brands";
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
   }
   
   .body {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-right: 100px;
     display: grid;
     height: 100vh; /* Full viewport height */
     width: 100vw; /* Full viewport width */
+    grid-template-columns: 3fr, 10fr;
     background-color: #f0f0f0; /* Light grey background */
-    grid-template-columns: 1fr, 6fr;
+    gap: 10px;
+    padding: 10px;
+    /* grid-template-columns: 1fr, 6fr; */
   }
+
+.input-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 3fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.resume-container {
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}

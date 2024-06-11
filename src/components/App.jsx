@@ -43,9 +43,13 @@ function App() {
   return (
     <>
       <div className="body">
-        <PersonalDetailsInputForm form={personalDetailsFormData} handleChange={handleChange} />
-        <EducationInputForm form={educationFormData} handleChange={handleEducationChange} />
-        <Resume personalDetails={personalDetailsFormData} educationDetials={educationFormData}/>
+        <div className='input-container'>
+          <PersonalDetailsInputForm form={personalDetailsFormData} handleChange={handleChange} />
+          <EducationInputForm form={educationFormData} handleChange={handleEducationChange} />
+        </div>
+        <div className='resume-container'>
+          <Resume personalDetails={personalDetailsFormData} educationDetials={educationFormData}/>
+        </div>
       </div>
     </>
   )

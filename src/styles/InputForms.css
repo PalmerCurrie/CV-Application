@@ -7,11 +7,12 @@
 
 /* Container for the form */
 .input-form {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    padding: 20px;
+    width: 100%;
+    /* min-height: 100vh; */
+    /* padding: 20px; */
 }
 
 /* Form styling */
@@ -20,14 +21,13 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    max-width: 400px;
-    width: 100%;
+    width: 500px;
 }
 
 /* Label styling */
 .label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     font-weight: 600;
     color: #333; /* Dark grey text */
 }
@@ -36,7 +36,7 @@
 .input {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px; /* Space between inputs */
+    margin-bottom: 10px; /* Space between inputs */
     border: 1px solid #ced4da; /* Light grey border */
     border-radius: 4px;
     font-size: 16px;

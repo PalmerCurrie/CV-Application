@@ -14,14 +14,16 @@ export default function Resume({personalDetails, educationDetials}) {
            </div>
 
             <div className="education-container">
-                <div className="section-header"> Education </div>
-                    <h1 id='user-school' className='school'>{educationDetials.school}</h1>
-                    <div id='education-details' className="experience-container">
-                    <p id='user-city'>{educationDetials.degree}</p>
-                        <p id='user-city'>{educationDetials.city}</p>
-                        <p id='user-country'>{educationDetials.country}</p>
-                        <p id='user-startdate'>{educationDetials.startDate}</p> 
-                        <p id='user-enddate'>{educationDetials.endDate}</p> 
+                <h3 className="section-header"> Education </h3>
+
+
+                    <div id='education-details' className="education-details-container">
+                        <p id='user-location'>{educationDetials.city}, {educationDetials.country}</p>
+                        <p id='user-school' className='school'>{educationDetials.school}</p>
+                        <p id='user-date'>{educationDetials.startDate} - {educationDetials.endDate}</p>  
+                        <p id='user-degree'>{educationDetials.degree}</p>
+                        
+                        
                     </div>
             </div>
 
