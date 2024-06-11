@@ -6,7 +6,7 @@
 }
 
 /* Container for the form */
-.personal-details-input-form {
+.input-form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@
 }
 
 /* Form styling */
-.personal-details-input-form form {
+.input-form form {
     background: #fff; /* White background for the form */
     padding: 20px;
     border-radius: 8px;

@@ -1,18 +1,30 @@
 import '../styles/Resume.css'; // Import the CSS file
 
-export default function Resume({formData}) {
+export default function Resume({personalDetails, educationDetials}) {
 
     return (
         <div className="container">
            <div className="personal-details-container">
-                <h1 id='user-full-name' className='full-name'>{formData.fullName}</h1>
+                <h1 id='user-full-name' className='full-name'>{personalDetails.fullName}</h1>
                 <div id='personal-details'>
-                    <p id='user-email'>{formData.email}</p>
-                    <p id='user-phonenumber'>{formData.phonenumber}</p>
-                    <p id='user-address'>{formData.address}</p> 
+                    <p id='user-email'>{personalDetails.email}</p>
+                    <p id='user-phonenumber'>{personalDetails.phonenumber}</p>
+                    <p id='user-address'>{personalDetails.address}</p> 
                 </div>
-                <p></p>
            </div>
+
+            <div className="education-container">
+                <div className="section-header"> Education </div>
+                    <h1 id='user-school' className='school'>{educationDetials.school}</h1>
+                    <div id='education-details'>
+                    <p id='user-city'>{educationDetials.degree}</p>
+                        <p id='user-city'>{educationDetials.city}</p>
+                        <p id='user-country'>{educationDetials.country}</p>
+                        <p id='user-startdate'>{educationDetials.startDate}</p> 
+                        <p id='user-enddate'>{educationDetials.endDate}</p> 
+                    </div>
+            </div>
+
         </div>
 
     );

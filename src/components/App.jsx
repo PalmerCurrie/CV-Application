@@ -1,21 +1,39 @@
 import { useState } from 'react'
 import Resume from './Resume';
 import PersonalDetailsInputForm from "./PersonalDetailsInputForm"
+import EducationInputForm from "./EducationInputForm"
 import '../styles/App.css'
-import '../styles/PersonalDetailsInputForm.css'
+import '../styles/InputForms.css'
 import '../styles/Resume.css'
 
 function App() {
-  const [formData, setFormData] = useState({
+  const [personalDetailsFormData, setPersonalFormData] = useState({
     fullName: "",
     email: "",
     phonenumber: "",
     address: ""
   })
 
+  const [educationFormData, setEducationFormData] = useState({
+    degree: "",
+    school: "",
+    city: "",
+    country: "",
+    startDate: "",
+    endDate: ""
+  })
+
+  const handleEducationChange = (e) => {
+    const { name, value } = e.target;
+    setEducationFormData((prevData) => ({
+        ...prevData,
+        [name]: value
+    }));
+};
+
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prevData) => ({
+    setPersonalFormData((prevData) => ({  
         ...prevData,
         [name]: value
     }));
@@ -25,8 +43,9 @@ function App() {
   return (
     <>
       <div className="body">
-        <PersonalDetailsInputForm formData={formData} handleChange={handleChange} />
-        <Resume formData={formData} />
+        <PersonalDetailsInputForm form={personalDetailsFormData} handleChange={handleChange} />
+        <EducationInputForm form={educationFormData} handleChange={handleEducationChange} />
+        <Resume personalDetails={personalDetailsFormData} educationDetials={educationFormData}/>
       </div>
     </>
   )

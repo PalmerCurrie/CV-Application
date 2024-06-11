@@ -1,6 +1,4 @@
 /* Resume.css */
-
-/* Reset styles */
 * {
     margin: 0;
     padding: 0;
@@ -16,54 +14,77 @@ body {
     display: grid;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0; /* Light grey background for contrast */
+    background-color: #f0f0f0; 
     padding: 20px;
     font-family: 'Times New Roman', serif;
 }
 
 .container {
     width: 100%;
-    width: 595px;
+    max-width: 595px;
     height: 842px;
-    /* max-width: 794px; A4 paper width in pixels (8.27 inches) at 96 DPI */
-    /* aspect-ratio: 8.27 / 11.69; A4 aspect ratio */
-    background-color: #fff; /* White background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to mimic paper */
-    border-radius: 4px; /* Optional: Slightly rounded corners */
+    background-color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 4px; 
     padding: 20px;
-    overflow: auto; /* Ensure content within the paper can scroll if necessary */
+    overflow: auto; 
 }
 
-/* Optional: Add some padding and basic styles for the content inside the paper */
 .container * {
     margin-bottom: 16px;
 }
 
-
 .personal-details-container {
-    text-align: center; 
+    text-align: center;
+    background-color: #2a3d55; 
+    color: white; 
+    padding: 20px;
+    border-radius: 4px; 
+    margin-bottom: 20px; 
 }
 
-.full-name {
-    margin-top: 20px;
-    font-size: 24px; 
-    color: #000; 
-    margin-bottom: 10px; 
+.personal-details-container h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
 }
 
-#personal-details {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    flex-wrap: nowrap; 
-    gap: 15px;
-    margin: 0 auto; 
+.personal-details-container p {
+    margin: 5px 0;
 }
 
-#personal-details p {
-    width: auto; 
+.section-header {
+    font-size: 22px;
+    background-color: #f0f0f0; 
+    padding: 10px;
+    border-radius: 4px; 
+    margin-bottom: 20px; 
+    color: #2a3d55; 
+}
+
+.education-container, .experience-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px; 
+}
+
+.education-container p, .experience-container p {
+    margin: 5px 0;
     font-size: 14px;
-    margin: 0 2px; 
-    color: #000; 
-    white-space: nowrap; 
+    color: #333; /* text color */
+}
+
+#education-details, #experience-details {
+    display: flex;
+    flex-direction: column;
+}
+
+#education-details p, #experience-details p {
+    margin: 2px 0;
+}
+
+.school, .company {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #2a3d55; /* text color */
 }
