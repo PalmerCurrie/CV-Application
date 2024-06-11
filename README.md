@@ -1,8 +1,9 @@
-# React + Vite
+A CV / Resume Builder made from React, Javacsript, HTMl, and CSS. Using Vite + React to run.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# To Do:
+- Add Work Experience Section
+-  - Dropdown,
+-  - Cards, where users can make multiple work experiences
+-  Update Education to work with Dropdown
+- Add Icons 
