@@ -22,8 +22,6 @@ export default function Resume({personalDetails, educationDetials}) {
                         <p id='user-school' className='school'>{educationDetials.school}</p>
                         <p id='user-date'>{educationDetials.startDate} - {educationDetials.endDate}</p>  
                         <p id='user-degree'>{educationDetials.degree}</p>
-                        
-                        
                     </div>
             </div>
 
