@@ -13,7 +13,7 @@ function App() {
     email: "",
     phonenumber: "",
     address: ""
-  })
+  });
 
   const [educationFormData, setEducationFormData] = useState({
     degree: "",
@@ -22,7 +22,7 @@ function App() {
     country: "",
     startDate: "",
     endDate: ""
-  })
+  });
 
   const handleEducationChange = (e) => {
     const { name, value } = e.target;
@@ -41,13 +41,41 @@ function App() {
 };
 
 
+
+
+// New Stuff for WorkExperience Section
+
+const [workExperienceData, setWorkExperienceData] = useState({
+  jobTitle: "",
+  company: "",
+  description: "", 
+  startDate: "",
+  endDate: ""
+});
+
+const handleWorkExperienceChange = (e) => {
+  const { name, value } = e.target;
+  setWorkExperienceData((prevData) => ({
+    ...prevData,
+    [name]: value
+  }));
+};
+
+
+
+
+
   return (
     <>
       <div className="body">
         <div className='input-container'>
           <PersonalDetailsInputForm form={personalDetailsFormData} handleChange={handleChange} />
           <EducationInputForm form={educationFormData} handleChange={handleEducationChange} />
-          <WorkExperience form={educationFormData} handleChange={handleEducationChange} />
+          <WorkExperience 
+            form={workExperienceData}
+            handleChange={handleWorkExperienceChange}
+            />
+
         </div>
         <div className='resume-container'>
           <Resume personalDetails={personalDetailsFormData} educationDetials={educationFormData}/>
