@@ -5,6 +5,7 @@ import EducationInputForm from "./EducationInputForm"
 import '../styles/App.css'
 import '../styles/InputForms.css'
 import '../styles/Resume.css'
+import WorkExperience from './WorkExperience';
 
 function App() {
   const [personalDetailsFormData, setPersonalFormData] = useState({
@@ -46,6 +47,7 @@ function App() {
         <div className='input-container'>
           <PersonalDetailsInputForm form={personalDetailsFormData} handleChange={handleChange} />
           <EducationInputForm form={educationFormData} handleChange={handleEducationChange} />
+          <WorkExperience form={educationFormData} handleChange={handleEducationChange} />
         </div>
         <div className='resume-container'>
           <Resume personalDetails={personalDetailsFormData} educationDetials={educationFormData}/>
