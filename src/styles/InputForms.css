@@ -24,6 +24,19 @@
     width: 500px;
 }
 
+.input-form-header {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    text-align: center;
+}
+
+.header-text {
+    margin: 0;
+    font-size: 1.2rem;
+    color: black;
+}
+
 /* Label styling */
 .label {
     display: block;
@@ -51,3 +64,4 @@
     outline: none;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.25); /* Subtle blue shadow on focus */
 }
+
