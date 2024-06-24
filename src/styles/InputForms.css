@@ -33,8 +33,9 @@
 
 .header-text {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: black;
+    text-align: center;
 }
 
 /* Label styling */
@@ -63,5 +64,12 @@
     border-color: #80bdff; /* Blue border on focus */
     outline: none;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.25); /* Subtle blue shadow on focus */
+}
+
+.date-input {
+    display: flex;
+    /* grid-auto-columns: 1fr 1fr; */
+    gap: 10px;
+    margin: 10px;
 }
 

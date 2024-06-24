@@ -30,12 +30,13 @@ export default function EducationInputForm({form, handleChange}) {
                     <label htmlFor="country" className="label">County</label>
                     <input type="text" id="country" name="country" className="input" value={form.country} onChange={handleChange}/>
 
-                    <label htmlFor="startDate" className="label">Start Date</label>
-                    <input type="date" id="startDate" name="startDate" className="input" value={form.startDate} onChange={handleChange}/>
+                    <div className='date-input'>
+                        <label htmlFor="startDate" className="label">Start Date</label>
+                        <input type="date" id="startDate" name="startDate" className="input" value={form.startDate} onChange={handleChange}/>
 
-                    <label htmlFor="endDate" className="label">End Date</label>
-                    <input type="date" id="endDate" name="endDate" className="input" value={form.endDate} onChange={handleChange}/>
-                    
+                        <label htmlFor="endDate" className="label">End Date</label>
+                        <input type="date" id="endDate" name="endDate" className="input" value={form.endDate} onChange={handleChange}/>
+                    </div>
                 </form>
             )}
         </div>
