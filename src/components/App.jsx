@@ -78,7 +78,10 @@ const handleWorkExperienceChange = (e) => {
 
         </div>
         <div className='resume-container'>
-          <Resume personalDetails={personalDetailsFormData} educationDetials={educationFormData}/>
+          <Resume 
+          personalDetails={personalDetailsFormData} 
+          educationDetials={educationFormData}
+          workExperienceDetails={workExperienceData}/>
         </div>
       </div>
     </>

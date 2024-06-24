@@ -1,6 +1,6 @@
 import '../styles/Resume.css'; // Import the CSS file
 
-export default function Resume({personalDetails, educationDetials}) {
+export default function Resume({personalDetails, educationDetials, workExperienceDetails}) {
 
     return (
         <div className="container">
@@ -22,6 +22,17 @@ export default function Resume({personalDetails, educationDetials}) {
                         <p id='user-school' className='school'>{educationDetials.school}</p>
                         <p id='user-date'>{educationDetials.startDate} - {educationDetials.endDate}</p>  
                         <p id='user-degree'>{educationDetials.degree}</p>
+                    </div>
+            </div>
+
+            <div className="education-container">
+                <h3 className="section-header"> Work Experience </h3>
+                    <div id='education-details' className="education-details-container">
+                        <p id='user-jobtitle'>{workExperienceDetails.jobTitle}</p>
+                        <p id='user-company'>{workExperienceDetails.company}</p>
+                        <p id='user-description'>{workExperienceDetails.description}</p>
+                        <p id='user-date'>{workExperienceDetails.startDate} - {workExperienceDetails.endDate}</p>  
+
                     </div>
             </div>
 
