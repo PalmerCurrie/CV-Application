@@ -51,24 +51,24 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 10px; /* Space between inputs */
-    border: 1px solid #ced4da; /* Light grey border */
-    border-radius: 4px;
+    border: 0px solid #ced4da; /* Light grey border */
+    border-radius: 15px;
     font-size: 16px;
     color: #495057; /* Dark grey text */
-    background-color: #fff;
+    background-color: #f3f4f6;
     transition: border-color 0.3s ease;
 }
 
 /* Input field focus styling */
 .input:focus {
-    border-color: #80bdff; /* Blue border on focus */
+    border-color: #2885e7; 
     outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25); /* Subtle blue shadow on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.50); 
+    transition: border-color 0.5s ease;
 }
 
 .date-input {
     display: flex;
-    /* grid-auto-columns: 1fr 1fr; */
     gap: 10px;
     margin: 10px;
 }
